@@ -1,0 +1,14 @@
+C:\Users\maril\source\repos\MegaDesk-Belnap\MegaDesk-Belnap\bin\Debug\MegaDesk-Belnap.exe.config
+C:\Users\maril\source\repos\MegaDesk-Belnap\MegaDesk-Belnap\bin\Debug\MegaDesk-Belnap.exe
+C:\Users\maril\source\repos\MegaDesk-Belnap\MegaDesk-Belnap\bin\Debug\MegaDesk-Belnap.pdb
+C:\Users\maril\source\repos\MegaDesk-Belnap\MegaDesk-Belnap\obj\Debug\MegaDesk-Belnap.csproj.AssemblyReference.cache
+C:\Users\maril\source\repos\MegaDesk-Belnap\MegaDesk-Belnap\obj\Debug\MegaDesk_Belnap.Properties.Resources.resources
+C:\Users\maril\source\repos\MegaDesk-Belnap\MegaDesk-Belnap\obj\Debug\MegaDesk-Belnap.csproj.GenerateResource.cache
+C:\Users\maril\source\repos\MegaDesk-Belnap\MegaDesk-Belnap\obj\Debug\MegaDesk-Belnap.csproj.CoreCompileInputs.cache
+C:\Users\maril\source\repos\MegaDesk-Belnap\MegaDesk-Belnap\obj\Debug\MegaDesk-Belnap.exe
+C:\Users\maril\source\repos\MegaDesk-Belnap\MegaDesk-Belnap\obj\Debug\MegaDesk-Belnap.pdb
+C:\Users\maril\source\repos\MegaDesk-Belnap\MegaDesk-Belnap\obj\Debug\MegaDesk_Belnap.MainMenu.resources
+C:\Users\maril\source\repos\MegaDesk-Belnap\MegaDesk-Belnap\obj\Debug\MegaDesk_Belnap.ViewAllQuotes.resources
+C:\Users\maril\source\repos\MegaDesk-Belnap\MegaDesk-Belnap\obj\Debug\MegaDesk_Belnap.SearchQuotes.resources
+C:\Users\maril\source\repos\MegaDesk-Belnap\MegaDesk-Belnap\obj\Debug\MegaDesk_Belnap.AddQuotes.resources
+C:\Users\maril\source\repos\MegaDesk-Belnap\MegaDesk-Belnap\obj\Debug\MegaDesk_Belnap.DisplayQuote.resources
