@@ -6,10 +6,157 @@ using System.Threading.Tasks;
 
 namespace MegaDesk_Belnap
 {
-    internal class DeskQuote
+    public class DeskQuote
     {
-        string name = "";
-        DateTime quoteDate = DateTime.Now;
-        Desk theDesk = new Desk();
+        private Desk desk;
+        private int rushDays;
+        private string customer;
+        private DateTime date;
+        private int quotePrice;
+
+        public Desk Desk
+        {
+            get { return desk; }
+            set { desk = value; }
+        }
+
+        public int RushDays
+        {
+            get { return rushDays; }
+            set { rushDays = value; }
+        }
+
+        public string Customer
+        {
+            get { return customer; }
+            set { customer = value; }
+        }
+
+        public DateTime Date
+        {
+            get { return date; }
+            set { date = value; }
+        }
+
+        public int getWidth()
+        {
+            return desk.Width;
+        }
+
+        public int getDepth()
+        {
+            return desk.Depth;
+        }
+
+        public int getDrawers()
+        {
+            return desk.NumberDrawers;
+        }
+
+        public string getMaterial()
+        {
+            return desk.Material.ToString();
+        }
+
+        public DeskQuote()
+        {
+            rushDays = 0;
+            customer = null;
+            desk = null;
+            date = new DateTime();
+            quotePrice = 200;
+        }
+
+        public DeskQuote(Desk desk, int rushDays, string customer, DateTime date)
+        {
+            this.desk = desk;
+            this.rushDays = rushDays;
+            this.customer = customer;
+            this.date = date;
+            quotePrice = 200;
+        }
+
+        public void calculateQuote()
+        {
+            int surfaceArea = desk.Width * desk.Depth;
+
+            if (surfaceArea > 1000)
+            {
+                quotePrice += surfaceArea;
+            }
+
+            quotePrice += desk.NumberDrawers * 50;
+            quotePrice += getSurfaceMaterialPrice();
+            quotePrice += getRushCost(surfaceArea);
+        }
+
+        public int getQuotePrice() { return quotePrice; }
+
+        private int getSurfaceMaterialPrice()
+        {
+            switch (desk.Material)
+            {
+                case DesktopMaterial.Oak:
+                    return 200;
+                case DesktopMaterial.Laminate:
+                    return 100;
+                case DesktopMaterial.Pine:
+                    return 50;
+                case DesktopMaterial.Rosewood:
+                    return 300;
+                case DesktopMaterial.Veneer:
+                    return 125;
+                default:
+                    return 0;
+            }
+        }
+
+        private int getRushCost(int a)
+        {
+            switch (rushDays)
+            {
+                case 3:
+                    if (a > 2000)
+                    {
+                        return 80;
+                    }
+                    else if (a > 1000)
+                    {
+                        return 70;
+                    }
+                    else
+                    {
+                        return 60;
+                    }
+                case 5:
+                    if (a > 2000)
+                    {
+                        return 60;
+                    }
+                    else if (a > 1000)
+                    {
+                        return 50;
+                    }
+                    else
+                    {
+                        return 40;
+                    }
+                case 7:
+                    if (a > 2000)
+                    {
+                        return 40;
+                    }
+                    else if (a > 1000)
+                    {
+                        return 35;
+                    }
+                    else
+                    {
+                        return 30;
+                    }
+                default:
+                    return 0;
+            }
+        }
     }
 }

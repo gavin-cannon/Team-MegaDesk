@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace MegaDesk_Belnap
 {
@@ -14,28 +15,42 @@ namespace MegaDesk_Belnap
         public const int MAXWIDTH = 96;
 
         //get user input of Depth for desk (min 12 in - max 48 in)
-        public int Height { get; set; }
-        public const int MINHEIGHT = 12;
-        public const int MAXHEIGHT = 48;
+        public int Depth { get; set; }
+        public const int MINDEPTH = 12;
+        public const int MAXDEPTH = 48;
 
         //get user input of Number of Drawers for desk (min 0 - max 7)
         public int NumberDrawers { get; set; }
         public const int MINDRAWER = 0;
         public const int MAXDRAWER = 7;
 
-        //get user input for DesktopMaterial (Oak, Laminate, Rosewood, Veneer, Pine)
-        public string DesktopMaterial { get; set; }
+        // Changed the data type to the enum DektopMaterial - Emilio
+        public DesktopMaterial Material { get; set; }
 
-        //validate Width using Validating event that checks for valid minimum and maximum values.
-        //validate Depth using KeyPress event that checks for valid integer input using a compound statement and the char data type with IsControl and IsDigit methods
-        //validate
+        // added a custom and default constructor for the class - Emilio
+        public Desk()
+        {
+            Width = 0;
+            Depth = 0;
+            NumberDrawers = 0;
+            Material = new DesktopMaterial();
+        }
+
+        public Desk(int width, int depth, int numberDrawers, DesktopMaterial material)
+        {
+            Width = width;
+            Depth = depth;
+            NumberDrawers = numberDrawers;
+            Material = material;
+        }
+
     }
-    enum DesktopMaterial
+    public enum DesktopMaterial
     {
-        Laminate,
         Oak,
+        Laminate,
+        Pine,
         Rosewood,
-        Veneer,
-        Pine
+        Veneer
     }
 }

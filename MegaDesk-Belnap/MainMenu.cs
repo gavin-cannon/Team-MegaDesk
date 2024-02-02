@@ -12,8 +12,10 @@ namespace MegaDesk_Belnap
 {
     public partial class MainMenu : Form
     {
+        public List<DeskQuote> deskQuotes = new List<DeskQuote>();
         public MainMenu()
         {
+
             InitializeComponent();
         }
 
