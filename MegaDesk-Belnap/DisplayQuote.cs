@@ -12,8 +12,10 @@ namespace MegaDesk_Belnap
 {
     public partial class DisplayQuote : Form
     {
+        private DeskQuote dq;
         public DisplayQuote(DeskQuote d)
         {
+            dq = d;
             InitializeComponent();
 
             date.Text = d.Date.ToString();
@@ -29,10 +31,10 @@ namespace MegaDesk_Belnap
             d.calculateQuote();
             totalQuote.Text = $"${d.getQuotePrice()}";
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            MainMenu viewMainMenu = new MainMenu();
+
+            MainMenu viewMainMenu = new MainMenu(dq);
             viewMainMenu.Tag = this;
             viewMainMenu.Show(this);
             Hide();

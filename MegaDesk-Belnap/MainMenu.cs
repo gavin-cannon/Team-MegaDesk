@@ -12,7 +12,13 @@ namespace MegaDesk_Belnap
 {
     public partial class MainMenu : Form
     {
-        public List<DeskQuote> deskQuotes = new List<DeskQuote>();
+        private List<DeskQuote> deskQuoteList = new List<DeskQuote>();
+        public MainMenu(DeskQuote deskQuote)
+        {
+            deskQuoteList.Add(deskQuote);
+            InitializeComponent();
+        }
+
         public MainMenu()
         {
 
