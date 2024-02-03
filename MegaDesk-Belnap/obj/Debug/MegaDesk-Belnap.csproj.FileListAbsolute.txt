@@ -26,3 +26,21 @@ C:\Users\kingl\OneDrive\Documents\Team-MegaDesk\MegaDesk-Belnap\obj\Debug\MegaDe
 C:\Users\kingl\OneDrive\Documents\Team-MegaDesk\MegaDesk-Belnap\obj\Debug\MegaDesk-Belnap.csproj.CoreCompileInputs.cache
 C:\Users\kingl\OneDrive\Documents\Team-MegaDesk\MegaDesk-Belnap\obj\Debug\MegaDesk-Belnap.exe
 C:\Users\kingl\OneDrive\Documents\Team-MegaDesk\MegaDesk-Belnap\obj\Debug\MegaDesk-Belnap.pdb
+C:\Users\canno\OneDrive\Desktop\School Stuff\Winter 2024\.NET Software Development\Team\MegaDesk\MegaDesk-Belnap\bin\Debug\MegaDesk-Belnap.exe.config
+C:\Users\canno\OneDrive\Desktop\School Stuff\Winter 2024\.NET Software Development\Team\MegaDesk\MegaDesk-Belnap\bin\Debug\MegaDesk-Belnap.exe
+C:\Users\canno\OneDrive\Desktop\School Stuff\Winter 2024\.NET Software Development\Team\MegaDesk\MegaDesk-Belnap\bin\Debug\MegaDesk-Belnap.pdb
+C:\Users\canno\OneDrive\Desktop\School Stuff\Winter 2024\.NET Software Development\Team\MegaDesk\MegaDesk-Belnap\obj\Debug\MegaDesk-Belnap.csproj.AssemblyReference.cache
+C:\Users\canno\OneDrive\Desktop\School Stuff\Winter 2024\.NET Software Development\Team\MegaDesk\MegaDesk-Belnap\obj\Debug\MegaDesk-Belnap.csproj.SuggestedBindingRedirects.cache
+C:\Users\canno\OneDrive\Desktop\School Stuff\Winter 2024\.NET Software Development\Team\MegaDesk\MegaDesk-Belnap\obj\Debug\MegaDesk_Belnap.AddQuotes.resources
+C:\Users\canno\OneDrive\Desktop\School Stuff\Winter 2024\.NET Software Development\Team\MegaDesk\MegaDesk-Belnap\obj\Debug\MegaDesk_Belnap.DisplayQuote.resources
+C:\Users\canno\OneDrive\Desktop\School Stuff\Winter 2024\.NET Software Development\Team\MegaDesk\MegaDesk-Belnap\obj\Debug\MegaDesk_Belnap.MainMenu.resources
+C:\Users\canno\OneDrive\Desktop\School Stuff\Winter 2024\.NET Software Development\Team\MegaDesk\MegaDesk-Belnap\obj\Debug\MegaDesk_Belnap.Properties.Resources.resources
+C:\Users\canno\OneDrive\Desktop\School Stuff\Winter 2024\.NET Software Development\Team\MegaDesk\MegaDesk-Belnap\obj\Debug\MegaDesk_Belnap.SearchQuotes.resources
+C:\Users\canno\OneDrive\Desktop\School Stuff\Winter 2024\.NET Software Development\Team\MegaDesk\MegaDesk-Belnap\obj\Debug\MegaDesk_Belnap.ViewAllQuotes.resources
+C:\Users\canno\OneDrive\Desktop\School Stuff\Winter 2024\.NET Software Development\Team\MegaDesk\MegaDesk-Belnap\obj\Debug\MegaDesk-Belnap.csproj.GenerateResource.cache
+C:\Users\canno\OneDrive\Desktop\School Stuff\Winter 2024\.NET Software Development\Team\MegaDesk\MegaDesk-Belnap\obj\Debug\MegaDesk-Belnap.csproj.CoreCompileInputs.cache
+C:\Users\canno\OneDrive\Desktop\School Stuff\Winter 2024\.NET Software Development\Team\MegaDesk\MegaDesk-Belnap\obj\Debug\MegaDesk-Belnap.exe
+C:\Users\canno\OneDrive\Desktop\School Stuff\Winter 2024\.NET Software Development\Team\MegaDesk\MegaDesk-Belnap\obj\Debug\MegaDesk-Belnap.pdb
+C:\Users\canno\OneDrive\Desktop\School Stuff\Winter 2024\.NET Software Development\Team\MegaDesk\MegaDesk-Belnap\bin\Debug\Newtonsoft.Json.dll
+C:\Users\canno\OneDrive\Desktop\School Stuff\Winter 2024\.NET Software Development\Team\MegaDesk\MegaDesk-Belnap\bin\Debug\Newtonsoft.Json.xml
+C:\Users\canno\OneDrive\Desktop\School Stuff\Winter 2024\.NET Software Development\Team\MegaDesk\MegaDesk-Belnap\obj\Debug\MegaDesk-Belnap.csproj.CopyComplete

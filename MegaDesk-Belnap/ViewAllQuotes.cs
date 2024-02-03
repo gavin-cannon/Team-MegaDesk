@@ -12,7 +12,7 @@ namespace MegaDesk_Belnap
 {
     public partial class ViewAllQuotes : Form
     {
-        public ViewAllQuotes()
+        public ViewAllQuotes(List<DeskQuote> quotes)
         {
             InitializeComponent();
         }

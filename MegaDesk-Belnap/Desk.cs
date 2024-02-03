@@ -7,6 +7,14 @@ using System.Windows.Forms;
 
 namespace MegaDesk_Belnap
 {
+    public enum DesktopMaterial
+    {
+        Oak,
+        Laminate,
+        Pine,
+        Rosewood,
+        Veneer
+    }
     public class Desk
     {
         //get user input of Width for desk (min 24 in - max 96 in)
@@ -45,12 +53,5 @@ namespace MegaDesk_Belnap
         }
 
     }
-    public enum DesktopMaterial
-    {
-        Oak,
-        Laminate,
-        Pine,
-        Rosewood,
-        Veneer
-    }
+
 }
