@@ -76,7 +76,6 @@ namespace MegaDesk_Belnap
             quotePrice = 200;
         }
 
-        //adfasdfasdfdasdfas
 
         public void calculateQuote()
         {
