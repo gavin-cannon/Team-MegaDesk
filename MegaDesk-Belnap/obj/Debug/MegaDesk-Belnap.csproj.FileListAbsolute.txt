@@ -44,3 +44,6 @@ C:\Users\canno\OneDrive\Desktop\School Stuff\Winter 2024\.NET Software Developme
 C:\Users\canno\OneDrive\Desktop\School Stuff\Winter 2024\.NET Software Development\Team\MegaDesk\MegaDesk-Belnap\bin\Debug\Newtonsoft.Json.dll
 C:\Users\canno\OneDrive\Desktop\School Stuff\Winter 2024\.NET Software Development\Team\MegaDesk\MegaDesk-Belnap\bin\Debug\Newtonsoft.Json.xml
 C:\Users\canno\OneDrive\Desktop\School Stuff\Winter 2024\.NET Software Development\Team\MegaDesk\MegaDesk-Belnap\obj\Debug\MegaDesk-Belnap.csproj.CopyComplete
+C:\Users\kingl\OneDrive\Documents\Team-MegaDesk\MegaDesk-Belnap\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kingl\OneDrive\Documents\Team-MegaDesk\MegaDesk-Belnap\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kingl\OneDrive\Documents\Team-MegaDesk\MegaDesk-Belnap\obj\Debug\MegaDesk-Belnap.csproj.CopyComplete

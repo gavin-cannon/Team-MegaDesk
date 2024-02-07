@@ -76,6 +76,8 @@ namespace MegaDesk_Belnap
             quotePrice = 200;
         }
 
+        //adfasdfasdfdasdfas
+
         public void calculateQuote()
         {
             int surfaceArea = desk.Width * desk.Depth;
