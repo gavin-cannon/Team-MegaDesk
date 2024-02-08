@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
+using System.Runtime.Remoting.Messaging;
+using System.Windows.Forms;
 
 namespace MegaDesk_Belnap
 {
@@ -13,6 +12,7 @@ namespace MegaDesk_Belnap
         private string customer;
         private DateTime date;
         private int quotePrice;
+        private int[,] rushOrderPrices = new int[3,3];
 
         public Desk Desk
         {
@@ -65,6 +65,7 @@ namespace MegaDesk_Belnap
             desk = null;
             date = new DateTime();
             quotePrice = 200;
+            GetRushOrder();
         }
 
         public DeskQuote(Desk desk, int rushDays, string customer, DateTime date)
@@ -74,6 +75,7 @@ namespace MegaDesk_Belnap
             this.customer = customer;
             this.date = date;
             quotePrice = 200;
+            GetRushOrder();
         }
 
 
@@ -112,6 +114,33 @@ namespace MegaDesk_Belnap
             }
         }
 
+        private void GetRushOrder()
+        {
+            try
+            {
+                string[] pricesFromFile = File.ReadAllLines("C:\\Users\\kingl\\OneDrive\\Documents\\Team-MegaDesk\\MegaDesk-Belnap\\rushOrderPrices.txt");
+                int pricesFromFileIndex = 0;
+
+                for (int r = 0; r < 3; r++)
+                {
+                    for (int c = 0; c < 3; c++)
+                    {
+                        rushOrderPrices[r, c] = int.Parse(pricesFromFile[pricesFromFileIndex]); 
+                        pricesFromFileIndex++;
+                    }
+                }
+
+            }
+            catch (FileNotFoundException)
+            {
+                MessageBox.Show("Rush Order file not found.");
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+            }
+        }
+
         private int getRushCost(int a)
         {
             switch (rushDays)
@@ -119,41 +148,41 @@ namespace MegaDesk_Belnap
                 case 3:
                     if (a > 2000)
                     {
-                        return 80;
+                        return rushOrderPrices[0,2];
                     }
                     else if (a > 1000)
                     {
-                        return 70;
+                        return rushOrderPrices[0,1];
                     }
                     else
                     {
-                        return 60;
+                        return rushOrderPrices[0,0];
                     }
                 case 5:
                     if (a > 2000)
                     {
-                        return 60;
+                        return rushOrderPrices[1,2];
                     }
                     else if (a > 1000)
                     {
-                        return 50;
+                        return rushOrderPrices[1,1];
                     }
                     else
                     {
-                        return 40;
+                        return rushOrderPrices[1,0];
                     }
                 case 7:
                     if (a > 2000)
                     {
-                        return 40;
+                        return rushOrderPrices[2,2];
                     }
                     else if (a > 1000)
                     {
-                        return 35;
+                        return rushOrderPrices[2,1];
                     }
                     else
                     {
-                        return 30;
+                        return rushOrderPrices[2,0];
                     }
                 default:
                     return 0;
