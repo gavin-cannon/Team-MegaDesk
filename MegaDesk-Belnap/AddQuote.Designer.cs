@@ -38,10 +38,6 @@
             this.CustomerInputBox = new System.Windows.Forms.TextBox();
             this.DeskWidthInputBox = new System.Windows.Forms.TextBox();
             this.DeskDepthInputBox = new System.Windows.Forms.TextBox();
-            this.threeDayRush = new System.Windows.Forms.RadioButton();
-            this.fiveDayRush = new System.Windows.Forms.RadioButton();
-            this.sevenDayRush = new System.Windows.Forms.RadioButton();
-            this.noRush = new System.Windows.Forms.RadioButton();
             this.DrawersInput = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.material = new System.Windows.Forms.ComboBox();
@@ -72,7 +68,7 @@
             // DeskWidth
             // 
             this.DeskWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeskWidth.Location = new System.Drawing.Point(100, 114);
+            this.DeskWidth.Location = new System.Drawing.Point(100, 115);
             this.DeskWidth.Name = "DeskWidth";
             this.DeskWidth.Size = new System.Drawing.Size(203, 30);
             this.DeskWidth.TabIndex = 2;
@@ -99,7 +95,7 @@
             // numOfDrawers
             // 
             this.numOfDrawers.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numOfDrawers.Location = new System.Drawing.Point(100, 203);
+            this.numOfDrawers.Location = new System.Drawing.Point(100, 200);
             this.numOfDrawers.Name = "numOfDrawers";
             this.numOfDrawers.Size = new System.Drawing.Size(187, 32);
             this.numOfDrawers.TabIndex = 5;
@@ -108,7 +104,7 @@
             // RushOrder
             // 
             this.RushOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RushOrder.Location = new System.Drawing.Point(100, 342);
+            this.RushOrder.Location = new System.Drawing.Point(102, 314);
             this.RushOrder.Name = "RushOrder";
             this.RushOrder.Size = new System.Drawing.Size(187, 32);
             this.RushOrder.TabIndex = 6;
@@ -138,60 +134,13 @@
             this.DeskDepthInputBox.Size = new System.Drawing.Size(100, 22);
             this.DeskDepthInputBox.TabIndex = 9;
             // 
-            // threeDayRush
-            // 
-            this.threeDayRush.AutoSize = true;
-            this.threeDayRush.Location = new System.Drawing.Point(336, 342);
-            this.threeDayRush.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.threeDayRush.Name = "threeDayRush";
-            this.threeDayRush.Size = new System.Drawing.Size(97, 20);
-            this.threeDayRush.TabIndex = 10;
-            this.threeDayRush.TabStop = true;
-            this.threeDayRush.Text = "3 Day Rush";
-            this.threeDayRush.UseVisualStyleBackColor = true;
-            // 
-            // fiveDayRush
-            // 
-            this.fiveDayRush.AutoSize = true;
-            this.fiveDayRush.Location = new System.Drawing.Point(336, 368);
-            this.fiveDayRush.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.fiveDayRush.Name = "fiveDayRush";
-            this.fiveDayRush.Size = new System.Drawing.Size(97, 20);
-            this.fiveDayRush.TabIndex = 11;
-            this.fiveDayRush.TabStop = true;
-            this.fiveDayRush.Text = "5 Day Rush";
-            this.fiveDayRush.UseVisualStyleBackColor = true;
-            // 
-            // sevenDayRush
-            // 
-            this.sevenDayRush.AutoSize = true;
-            this.sevenDayRush.Location = new System.Drawing.Point(336, 394);
-            this.sevenDayRush.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.sevenDayRush.Name = "sevenDayRush";
-            this.sevenDayRush.Size = new System.Drawing.Size(97, 20);
-            this.sevenDayRush.TabIndex = 12;
-            this.sevenDayRush.TabStop = true;
-            this.sevenDayRush.Text = "7 Day Rush";
-            this.sevenDayRush.UseVisualStyleBackColor = true;
-            // 
-            // noRush
-            // 
-            this.noRush.AutoSize = true;
-            this.noRush.Location = new System.Drawing.Point(336, 420);
-            this.noRush.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.noRush.Name = "noRush";
-            this.noRush.Size = new System.Drawing.Size(179, 20);
-            this.noRush.TabIndex = 13;
-            this.noRush.TabStop = true;
-            this.noRush.Text = "None (Standard 14 Days)";
-            this.noRush.UseVisualStyleBackColor = true;
-            // 
             // DrawersInput
             // 
-            this.DrawersInput.Location = new System.Drawing.Point(336, 206);
+            this.DrawersInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DrawersInput.Location = new System.Drawing.Point(336, 200);
             this.DrawersInput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DrawersInput.Name = "DrawersInput";
-            this.DrawersInput.Size = new System.Drawing.Size(120, 22);
+            this.DrawersInput.Size = new System.Drawing.Size(150, 23);
             this.DrawersInput.TabIndex = 15;
             // 
             // label1
@@ -213,7 +162,7 @@
             "Rosewood",
             "Veneer"});
             this.material.Location = new System.Drawing.Point(336, 244);
-            this.material.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.material.Margin = new System.Windows.Forms.Padding(4);
             this.material.Name = "material";
             this.material.Size = new System.Drawing.Size(160, 24);
             this.material.TabIndex = 17;
@@ -226,8 +175,8 @@
             "3",
             "5",
             "7"});
-            this.rushDays.Location = new System.Drawing.Point(104, 378);
-            this.rushDays.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rushDays.Location = new System.Drawing.Point(336, 316);
+            this.rushDays.Margin = new System.Windows.Forms.Padding(4);
             this.rushDays.Name = "rushDays";
             this.rushDays.Size = new System.Drawing.Size(160, 24);
             this.rushDays.TabIndex = 18;
@@ -241,10 +190,6 @@
             this.Controls.Add(this.material);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.DrawersInput);
-            this.Controls.Add(this.noRush);
-            this.Controls.Add(this.sevenDayRush);
-            this.Controls.Add(this.fiveDayRush);
-            this.Controls.Add(this.threeDayRush);
             this.Controls.Add(this.DeskDepthInputBox);
             this.Controls.Add(this.DeskWidthInputBox);
             this.Controls.Add(this.CustomerInputBox);
@@ -276,10 +221,6 @@
         private System.Windows.Forms.TextBox CustomerInputBox;
         private System.Windows.Forms.TextBox DeskWidthInputBox;
         private System.Windows.Forms.TextBox DeskDepthInputBox;
-        private System.Windows.Forms.RadioButton threeDayRush;
-        private System.Windows.Forms.RadioButton fiveDayRush;
-        private System.Windows.Forms.RadioButton sevenDayRush;
-        private System.Windows.Forms.RadioButton noRush;
         private System.Windows.Forms.NumericUpDown DrawersInput;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox material;

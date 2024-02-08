@@ -33,11 +33,9 @@ namespace MegaDesk_Belnap
         }
         private void button1_Click(object sender, EventArgs e)
         {
-
-            MainMenu viewMainMenu = new MainMenu(dq);
-            viewMainMenu.Tag = this;
-            viewMainMenu.Show(this);
-            Hide();
+            MainMenu viewMainMenu = (MainMenu)Tag;
+            viewMainMenu.Show();
+            Close();
         }
     }
 }
