@@ -72,7 +72,7 @@ namespace MegaDesk_Belnap
 
         private void SearchQuotes_Click(object sender, EventArgs e)
         {
-            SearchQuotes viewSearchQuotes = new SearchQuotes();
+            SearchQuotes viewSearchQuotes = new SearchQuotes(deskQuoteList);
             viewSearchQuotes.Tag = this;
             viewSearchQuotes.Show(this);
             this.Hide();

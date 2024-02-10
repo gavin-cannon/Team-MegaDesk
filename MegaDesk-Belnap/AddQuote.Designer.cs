@@ -47,10 +47,15 @@
             // 
             // SubmitButton
             // 
+<<<<<<< HEAD
             this.SubmitButton.Location = new System.Drawing.Point(442, 326);
             this.SubmitButton.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.SubmitButton.Location = new System.Drawing.Point(633, 378);
+            this.SubmitButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+>>>>>>> marilee
             this.SubmitButton.Name = "SubmitButton";
-            this.SubmitButton.Size = new System.Drawing.Size(82, 37);
+            this.SubmitButton.Size = new System.Drawing.Size(109, 46);
             this.SubmitButton.TabIndex = 0;
             this.SubmitButton.Text = "Submit";
             this.SubmitButton.UseVisualStyleBackColor = true;
@@ -59,102 +64,101 @@
             // CustomerName
             // 
             this.CustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerName.Location = new System.Drawing.Point(75, 61);
-            this.CustomerName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.CustomerName.Location = new System.Drawing.Point(100, 75);
             this.CustomerName.Name = "CustomerName";
-            this.CustomerName.Size = new System.Drawing.Size(130, 24);
+            this.CustomerName.Size = new System.Drawing.Size(173, 30);
             this.CustomerName.TabIndex = 1;
             this.CustomerName.Text = "Customer Name";
             // 
             // DeskWidth
             // 
             this.DeskWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeskWidth.Location = new System.Drawing.Point(75, 93);
-            this.DeskWidth.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.DeskWidth.Location = new System.Drawing.Point(100, 115);
             this.DeskWidth.Name = "DeskWidth";
-            this.DeskWidth.Size = new System.Drawing.Size(152, 24);
+            this.DeskWidth.Size = new System.Drawing.Size(203, 30);
             this.DeskWidth.TabIndex = 2;
             this.DeskWidth.Text = "Width (in inches)";
             // 
             // DeskDepth
             // 
             this.DeskDepth.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeskDepth.Location = new System.Drawing.Point(75, 128);
-            this.DeskDepth.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.DeskDepth.Location = new System.Drawing.Point(100, 158);
             this.DeskDepth.Name = "DeskDepth";
-            this.DeskDepth.Size = new System.Drawing.Size(130, 24);
+            this.DeskDepth.Size = new System.Drawing.Size(173, 30);
             this.DeskDepth.TabIndex = 3;
             this.DeskDepth.Text = "Depth (in inches)";
             // 
             // DesktopMaterialLabel
             // 
             this.DesktopMaterialLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DesktopMaterialLabel.Location = new System.Drawing.Point(75, 198);
-            this.DesktopMaterialLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.DesktopMaterialLabel.Location = new System.Drawing.Point(100, 244);
             this.DesktopMaterialLabel.Name = "DesktopMaterialLabel";
-            this.DesktopMaterialLabel.Size = new System.Drawing.Size(127, 26);
+            this.DesktopMaterialLabel.Size = new System.Drawing.Size(169, 32);
             this.DesktopMaterialLabel.TabIndex = 4;
             this.DesktopMaterialLabel.Text = "Desktop Material";
             // 
             // numOfDrawers
             // 
             this.numOfDrawers.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numOfDrawers.Location = new System.Drawing.Point(75, 165);
-            this.numOfDrawers.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.numOfDrawers.Location = new System.Drawing.Point(100, 200);
             this.numOfDrawers.Name = "numOfDrawers";
-            this.numOfDrawers.Size = new System.Drawing.Size(140, 26);
+            this.numOfDrawers.Size = new System.Drawing.Size(187, 32);
             this.numOfDrawers.TabIndex = 5;
             this.numOfDrawers.Text = "Number of Drawers";
             // 
             // RushOrder
             // 
             this.RushOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.RushOrder.Location = new System.Drawing.Point(75, 237);
             this.RushOrder.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+=======
+            this.RushOrder.Location = new System.Drawing.Point(102, 314);
+>>>>>>> marilee
             this.RushOrder.Name = "RushOrder";
-            this.RushOrder.Size = new System.Drawing.Size(140, 26);
+            this.RushOrder.Size = new System.Drawing.Size(187, 32);
             this.RushOrder.TabIndex = 6;
             this.RushOrder.Text = "Rush Order";
             // 
             // CustomerInputBox
             // 
-            this.CustomerInputBox.Location = new System.Drawing.Point(252, 63);
-            this.CustomerInputBox.Margin = new System.Windows.Forms.Padding(2);
+            this.CustomerInputBox.Location = new System.Drawing.Point(336, 78);
+            this.CustomerInputBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CustomerInputBox.Name = "CustomerInputBox";
-            this.CustomerInputBox.Size = new System.Drawing.Size(172, 20);
+            this.CustomerInputBox.Size = new System.Drawing.Size(228, 22);
             this.CustomerInputBox.TabIndex = 7;
             // 
             // DeskWidthInputBox
             // 
-            this.DeskWidthInputBox.Location = new System.Drawing.Point(252, 95);
-            this.DeskWidthInputBox.Margin = new System.Windows.Forms.Padding(2);
+            this.DeskWidthInputBox.Location = new System.Drawing.Point(336, 117);
+            this.DeskWidthInputBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DeskWidthInputBox.Name = "DeskWidthInputBox";
-            this.DeskWidthInputBox.Size = new System.Drawing.Size(76, 20);
+            this.DeskWidthInputBox.Size = new System.Drawing.Size(100, 22);
             this.DeskWidthInputBox.TabIndex = 8;
             // 
             // DeskDepthInputBox
             // 
-            this.DeskDepthInputBox.Location = new System.Drawing.Point(252, 129);
-            this.DeskDepthInputBox.Margin = new System.Windows.Forms.Padding(2);
+            this.DeskDepthInputBox.Location = new System.Drawing.Point(336, 159);
+            this.DeskDepthInputBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DeskDepthInputBox.Name = "DeskDepthInputBox";
-            this.DeskDepthInputBox.Size = new System.Drawing.Size(76, 20);
+            this.DeskDepthInputBox.Size = new System.Drawing.Size(100, 22);
             this.DeskDepthInputBox.TabIndex = 9;
             // 
             // DrawersInput
             // 
-            this.DrawersInput.Location = new System.Drawing.Point(252, 167);
-            this.DrawersInput.Margin = new System.Windows.Forms.Padding(2);
+            this.DrawersInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DrawersInput.Location = new System.Drawing.Point(336, 200);
+            this.DrawersInput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DrawersInput.Name = "DrawersInput";
-            this.DrawersInput.Size = new System.Drawing.Size(90, 20);
+            this.DrawersInput.Size = new System.Drawing.Size(150, 23);
             this.DrawersInput.TabIndex = 15;
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(76, 17);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(101, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(266, 28);
+            this.label1.Size = new System.Drawing.Size(355, 34);
             this.label1.TabIndex = 16;
             this.label1.Text = "All fields must be completed:";
             // 
@@ -166,10 +170,11 @@
             "Laminate",
             "Pine",
             "Rosewood",
-            "Venner"});
-            this.material.Location = new System.Drawing.Point(252, 198);
+            "Veneer"});
+            this.material.Location = new System.Drawing.Point(336, 244);
+            this.material.Margin = new System.Windows.Forms.Padding(4);
             this.material.Name = "material";
-            this.material.Size = new System.Drawing.Size(121, 21);
+            this.material.Size = new System.Drawing.Size(160, 24);
             this.material.TabIndex = 17;
             // 
             // rushDays
@@ -180,16 +185,21 @@
             "3",
             "5",
             "7"});
+<<<<<<< HEAD
             this.rushDays.Location = new System.Drawing.Point(252, 237);
+=======
+            this.rushDays.Location = new System.Drawing.Point(336, 316);
+            this.rushDays.Margin = new System.Windows.Forms.Padding(4);
+>>>>>>> marilee
             this.rushDays.Name = "rushDays";
-            this.rushDays.Size = new System.Drawing.Size(121, 21);
+            this.rushDays.Size = new System.Drawing.Size(160, 24);
             this.rushDays.TabIndex = 18;
             // 
             // AddQuotes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(621, 392);
+            this.ClientSize = new System.Drawing.Size(828, 482);
             this.Controls.Add(this.rushDays);
             this.Controls.Add(this.material);
             this.Controls.Add(this.label1);
@@ -204,7 +214,7 @@
             this.Controls.Add(this.DeskWidth);
             this.Controls.Add(this.CustomerName);
             this.Controls.Add(this.SubmitButton);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddQuotes";
             this.Text = "Add Quotes";
             ((System.ComponentModel.ISupportInitialize)(this.DrawersInput)).EndInit();
