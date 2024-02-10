@@ -145,6 +145,7 @@ namespace MegaDesk_Belnap
             }
             else
             {
+                material.BackColor = Color.White;
                 material.ForeColor = Color.Green;
             }
         }
@@ -164,6 +165,7 @@ namespace MegaDesk_Belnap
             }
             else
             {
+                rushDays.BackColor = Color.White;
                 rushDays.ForeColor = Color.Green;
             }
         }

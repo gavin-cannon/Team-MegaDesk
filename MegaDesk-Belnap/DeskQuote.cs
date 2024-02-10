@@ -90,11 +90,6 @@ namespace MegaDesk_Belnap
             quotePrice = 200;
             GetRushOrder();
         }
-
-<<<<<<< HEAD
-
-        public void calculateQuote()
-=======
         public struct CombinedDeskQuote
         {
             public int DeskWidth { get; set; }
@@ -125,7 +120,6 @@ namespace MegaDesk_Belnap
     
 
     public void calculateQuote()
->>>>>>> olivia's
         {
             int surfaceArea = desk.Width * desk.Depth;
 
@@ -160,7 +154,6 @@ namespace MegaDesk_Belnap
             }
         }
 
-<<<<<<< HEAD
         private void GetRushOrder()
         {
             try
@@ -172,7 +165,7 @@ namespace MegaDesk_Belnap
                 {
                     for (int c = 0; c < 3; c++)
                     {
-                        rushOrderPrices[r, c] = int.Parse(pricesFromFile[pricesFromFileIndex]); 
+                        rushOrderPrices[r, c] = int.Parse(pricesFromFile[pricesFromFileIndex]);
                         pricesFromFileIndex++;
                     }
                 }
@@ -186,7 +179,8 @@ namespace MegaDesk_Belnap
             {
                 MessageBox.Show(e.ToString());
             }
-=======
+        }
+
         public string FormattedDate
         {
             get { return date.ToString("MM/dd/yyyy"); }
@@ -196,7 +190,6 @@ namespace MegaDesk_Belnap
         public string FormattedQuotePrice
         {
             get { return quotePrice.ToString("C"); }
->>>>>>> olivia's
         }
 
         private int getRushCost(int a)
