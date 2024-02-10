@@ -38,6 +38,10 @@
             this.CustomerInputBox = new System.Windows.Forms.TextBox();
             this.DeskWidthInputBox = new System.Windows.Forms.TextBox();
             this.DeskDepthInputBox = new System.Windows.Forms.TextBox();
+            this.threeDayRush = new System.Windows.Forms.RadioButton();
+            this.fiveDayRush = new System.Windows.Forms.RadioButton();
+            this.sevenDayRush = new System.Windows.Forms.RadioButton();
+            this.noRush = new System.Windows.Forms.RadioButton();
             this.DrawersInput = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.material = new System.Windows.Forms.ComboBox();
@@ -47,15 +51,10 @@
             // 
             // SubmitButton
             // 
-<<<<<<< HEAD
-            this.SubmitButton.Location = new System.Drawing.Point(442, 326);
-            this.SubmitButton.Margin = new System.Windows.Forms.Padding(2);
-=======
-            this.SubmitButton.Location = new System.Drawing.Point(633, 378);
-            this.SubmitButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
->>>>>>> marilee
+            this.SubmitButton.Location = new System.Drawing.Point(950, 590);
+            this.SubmitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SubmitButton.Name = "SubmitButton";
-            this.SubmitButton.Size = new System.Drawing.Size(109, 46);
+            this.SubmitButton.Size = new System.Drawing.Size(164, 71);
             this.SubmitButton.TabIndex = 0;
             this.SubmitButton.Text = "Submit";
             this.SubmitButton.UseVisualStyleBackColor = true;
@@ -64,101 +63,155 @@
             // CustomerName
             // 
             this.CustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerName.Location = new System.Drawing.Point(100, 75);
+            this.CustomerName.Location = new System.Drawing.Point(150, 117);
+            this.CustomerName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CustomerName.Name = "CustomerName";
-            this.CustomerName.Size = new System.Drawing.Size(173, 30);
+            this.CustomerName.Size = new System.Drawing.Size(260, 46);
             this.CustomerName.TabIndex = 1;
             this.CustomerName.Text = "Customer Name";
             // 
             // DeskWidth
             // 
             this.DeskWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeskWidth.Location = new System.Drawing.Point(100, 115);
+            this.DeskWidth.Location = new System.Drawing.Point(150, 179);
+            this.DeskWidth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DeskWidth.Name = "DeskWidth";
-            this.DeskWidth.Size = new System.Drawing.Size(203, 30);
+            this.DeskWidth.Size = new System.Drawing.Size(304, 46);
             this.DeskWidth.TabIndex = 2;
             this.DeskWidth.Text = "Width (in inches)";
             // 
             // DeskDepth
             // 
             this.DeskDepth.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeskDepth.Location = new System.Drawing.Point(100, 158);
+            this.DeskDepth.Location = new System.Drawing.Point(150, 246);
+            this.DeskDepth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DeskDepth.Name = "DeskDepth";
-            this.DeskDepth.Size = new System.Drawing.Size(173, 30);
+            this.DeskDepth.Size = new System.Drawing.Size(260, 46);
             this.DeskDepth.TabIndex = 3;
             this.DeskDepth.Text = "Depth (in inches)";
             // 
             // DesktopMaterialLabel
             // 
             this.DesktopMaterialLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DesktopMaterialLabel.Location = new System.Drawing.Point(100, 244);
+            this.DesktopMaterialLabel.Location = new System.Drawing.Point(150, 381);
+            this.DesktopMaterialLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DesktopMaterialLabel.Name = "DesktopMaterialLabel";
-            this.DesktopMaterialLabel.Size = new System.Drawing.Size(169, 32);
+            this.DesktopMaterialLabel.Size = new System.Drawing.Size(254, 50);
             this.DesktopMaterialLabel.TabIndex = 4;
             this.DesktopMaterialLabel.Text = "Desktop Material";
             // 
             // numOfDrawers
             // 
             this.numOfDrawers.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numOfDrawers.Location = new System.Drawing.Point(100, 200);
+            this.numOfDrawers.Location = new System.Drawing.Point(150, 317);
+            this.numOfDrawers.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.numOfDrawers.Name = "numOfDrawers";
-            this.numOfDrawers.Size = new System.Drawing.Size(187, 32);
+            this.numOfDrawers.Size = new System.Drawing.Size(280, 50);
             this.numOfDrawers.TabIndex = 5;
             this.numOfDrawers.Text = "Number of Drawers";
             // 
             // RushOrder
             // 
             this.RushOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.RushOrder.Location = new System.Drawing.Point(75, 237);
-            this.RushOrder.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-=======
-            this.RushOrder.Location = new System.Drawing.Point(102, 314);
->>>>>>> marilee
+            this.RushOrder.Location = new System.Drawing.Point(150, 535);
+            this.RushOrder.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.RushOrder.Name = "RushOrder";
-            this.RushOrder.Size = new System.Drawing.Size(187, 32);
+            this.RushOrder.Size = new System.Drawing.Size(280, 50);
             this.RushOrder.TabIndex = 6;
             this.RushOrder.Text = "Rush Order";
             // 
             // CustomerInputBox
             // 
-            this.CustomerInputBox.Location = new System.Drawing.Point(336, 78);
-            this.CustomerInputBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CustomerInputBox.Location = new System.Drawing.Point(504, 121);
+            this.CustomerInputBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CustomerInputBox.Name = "CustomerInputBox";
-            this.CustomerInputBox.Size = new System.Drawing.Size(228, 22);
+            this.CustomerInputBox.Size = new System.Drawing.Size(340, 31);
             this.CustomerInputBox.TabIndex = 7;
+            this.CustomerInputBox.TextChanged += new System.EventHandler(this.CustomerInputBox_TextChanged);
+            this.CustomerInputBox.Validating += new System.ComponentModel.CancelEventHandler(this.customerInputBox_Validating);
             // 
             // DeskWidthInputBox
             // 
-            this.DeskWidthInputBox.Location = new System.Drawing.Point(336, 117);
-            this.DeskWidthInputBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DeskWidthInputBox.Location = new System.Drawing.Point(504, 183);
+            this.DeskWidthInputBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DeskWidthInputBox.Name = "DeskWidthInputBox";
-            this.DeskWidthInputBox.Size = new System.Drawing.Size(100, 22);
+            this.DeskWidthInputBox.Size = new System.Drawing.Size(148, 31);
             this.DeskWidthInputBox.TabIndex = 8;
+            this.DeskWidthInputBox.Validating += new System.ComponentModel.CancelEventHandler(this.deskWidthInputBox_Validating);
             // 
             // DeskDepthInputBox
             // 
-            this.DeskDepthInputBox.Location = new System.Drawing.Point(336, 159);
-            this.DeskDepthInputBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DeskDepthInputBox.Location = new System.Drawing.Point(504, 248);
+            this.DeskDepthInputBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DeskDepthInputBox.Name = "DeskDepthInputBox";
-            this.DeskDepthInputBox.Size = new System.Drawing.Size(100, 22);
+            this.DeskDepthInputBox.Size = new System.Drawing.Size(148, 31);
             this.DeskDepthInputBox.TabIndex = 9;
+            this.DeskDepthInputBox.Validating += new System.ComponentModel.CancelEventHandler(this.deskDepthInputBox_Validating);
+            // 
+            // threeDayRush
+            // 
+            this.threeDayRush.AutoSize = true;
+            this.threeDayRush.Location = new System.Drawing.Point(504, 535);
+            this.threeDayRush.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.threeDayRush.Name = "threeDayRush";
+            this.threeDayRush.Size = new System.Drawing.Size(155, 29);
+            this.threeDayRush.TabIndex = 10;
+            this.threeDayRush.TabStop = true;
+            this.threeDayRush.Text = "3 Day Rush";
+            this.threeDayRush.UseVisualStyleBackColor = true;
+            // 
+            // fiveDayRush
+            // 
+            this.fiveDayRush.AutoSize = true;
+            this.fiveDayRush.Location = new System.Drawing.Point(504, 575);
+            this.fiveDayRush.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fiveDayRush.Name = "fiveDayRush";
+            this.fiveDayRush.Size = new System.Drawing.Size(155, 29);
+            this.fiveDayRush.TabIndex = 11;
+            this.fiveDayRush.TabStop = true;
+            this.fiveDayRush.Text = "5 Day Rush";
+            this.fiveDayRush.UseVisualStyleBackColor = true;
+            // 
+            // sevenDayRush
+            // 
+            this.sevenDayRush.AutoSize = true;
+            this.sevenDayRush.Location = new System.Drawing.Point(504, 615);
+            this.sevenDayRush.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sevenDayRush.Name = "sevenDayRush";
+            this.sevenDayRush.Size = new System.Drawing.Size(155, 29);
+            this.sevenDayRush.TabIndex = 12;
+            this.sevenDayRush.TabStop = true;
+            this.sevenDayRush.Text = "7 Day Rush";
+            this.sevenDayRush.UseVisualStyleBackColor = true;
+            // 
+            // noRush
+            // 
+            this.noRush.AutoSize = true;
+            this.noRush.Location = new System.Drawing.Point(504, 656);
+            this.noRush.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.noRush.Name = "noRush";
+            this.noRush.Size = new System.Drawing.Size(286, 29);
+            this.noRush.TabIndex = 13;
+            this.noRush.TabStop = true;
+            this.noRush.Text = "None (Standard 14 Days)";
+            this.noRush.UseVisualStyleBackColor = true;
             // 
             // DrawersInput
             // 
-            this.DrawersInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DrawersInput.Location = new System.Drawing.Point(336, 200);
-            this.DrawersInput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DrawersInput.Location = new System.Drawing.Point(504, 321);
+            this.DrawersInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DrawersInput.Name = "DrawersInput";
-            this.DrawersInput.Size = new System.Drawing.Size(150, 23);
+            this.DrawersInput.Size = new System.Drawing.Size(180, 31);
             this.DrawersInput.TabIndex = 15;
+            this.DrawersInput.Validating += new System.ComponentModel.CancelEventHandler(this.drawersInput_Validating);
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(101, 21);
+            this.label1.Location = new System.Drawing.Point(152, 33);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(355, 34);
+            this.label1.Size = new System.Drawing.Size(532, 54);
             this.label1.TabIndex = 16;
             this.label1.Text = "All fields must be completed:";
             // 
@@ -170,11 +223,11 @@
             "Laminate",
             "Pine",
             "Rosewood",
-            "Veneer"});
-            this.material.Location = new System.Drawing.Point(336, 244);
-            this.material.Margin = new System.Windows.Forms.Padding(4);
+            "Venner"});
+            this.material.Location = new System.Drawing.Point(504, 381);
+            this.material.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.material.Name = "material";
-            this.material.Size = new System.Drawing.Size(160, 24);
+            this.material.Size = new System.Drawing.Size(238, 33);
             this.material.TabIndex = 17;
             // 
             // rushDays
@@ -185,25 +238,25 @@
             "3",
             "5",
             "7"});
-<<<<<<< HEAD
-            this.rushDays.Location = new System.Drawing.Point(252, 237);
-=======
-            this.rushDays.Location = new System.Drawing.Point(336, 316);
-            this.rushDays.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> marilee
+            this.rushDays.Location = new System.Drawing.Point(156, 590);
+            this.rushDays.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rushDays.Name = "rushDays";
-            this.rushDays.Size = new System.Drawing.Size(160, 24);
+            this.rushDays.Size = new System.Drawing.Size(238, 33);
             this.rushDays.TabIndex = 18;
             // 
             // AddQuotes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(828, 482);
+            this.ClientSize = new System.Drawing.Size(1242, 754);
             this.Controls.Add(this.rushDays);
             this.Controls.Add(this.material);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.DrawersInput);
+            this.Controls.Add(this.noRush);
+            this.Controls.Add(this.sevenDayRush);
+            this.Controls.Add(this.fiveDayRush);
+            this.Controls.Add(this.threeDayRush);
             this.Controls.Add(this.DeskDepthInputBox);
             this.Controls.Add(this.DeskWidthInputBox);
             this.Controls.Add(this.CustomerInputBox);
@@ -214,7 +267,7 @@
             this.Controls.Add(this.DeskWidth);
             this.Controls.Add(this.CustomerName);
             this.Controls.Add(this.SubmitButton);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AddQuotes";
             this.Text = "Add Quotes";
             ((System.ComponentModel.ISupportInitialize)(this.DrawersInput)).EndInit();
@@ -235,6 +288,10 @@
         private System.Windows.Forms.TextBox CustomerInputBox;
         private System.Windows.Forms.TextBox DeskWidthInputBox;
         private System.Windows.Forms.TextBox DeskDepthInputBox;
+        private System.Windows.Forms.RadioButton threeDayRush;
+        private System.Windows.Forms.RadioButton fiveDayRush;
+        private System.Windows.Forms.RadioButton sevenDayRush;
+        private System.Windows.Forms.RadioButton noRush;
         private System.Windows.Forms.NumericUpDown DrawersInput;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox material;

@@ -50,5 +50,110 @@ namespace MegaDesk_Belnap
             viewDisplayQuote.Show(this);
             Hide();
         }
+
+        private void CustomerInputBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        /********************************************************************
+         * NAME INPUT
+         * If the input is valid change color to Green! Otherwise, Red
+         *******************************************************************/
+        private void customerInputBox_Validating(object sender, CancelEventArgs e) 
+        {
+            if (string.IsNullOrEmpty(CustomerInputBox.Text))
+            {
+                //CustomerInputBox.Focus();
+                e.Cancel = true;
+                CustomerInputBox.ForeColor = Color.Red;
+            }
+            else
+            {
+                CustomerInputBox.ForeColor = Color.Green;
+            }
+        }
+        /**********************************************************************
+         * WIDTH VALIDATING 
+         * If the width is Valid change color to Green! Otherwise, Red
+         *********************************************************************/
+        private void deskWidthInputBox_Validating(Object sender, CancelEventArgs e) 
+        {
+
+            int value;
+            if (Int32.TryParse(DeskWidthInputBox.Text, out value) && 24 <= value && value <= 96 )
+            {
+                //DeskWidthInputBox.Focus();
+                DeskWidthInputBox.ForeColor = Color.Green;
+            }
+            else
+            {
+                DeskWidthInputBox.ForeColor= Color.Red;
+            }
+        }
+
+        /**********************************************************************
+         * DEPTH VALIDATING 
+         * If the Depth is Valid change color to Green! Otherwise, Red
+         *********************************************************************/
+        private void deskDepthInputBox_Validating(Object sender, CancelEventArgs e)
+        {
+
+            int value;
+            if (Int32.TryParse(DeskDepthInputBox.Text, out value) && 12 <= value && value <= 48 )
+            {
+                //DeskDepthInputBox.Focus();
+                DeskDepthInputBox.ForeColor = Color.Green;
+            }
+            else
+            {
+                DeskDepthInputBox.ForeColor = Color.Red;
+            }
+        }
+
+        /**********************************************************************
+         * DRAWERS VALIDATING 
+         * If the Drawer is Valid change color to Green! Otherwise, Red
+         *********************************************************************/
+        private void drawersInput_Validating(Object sender, CancelEventArgs e)
+        {
+            int value;
+            if (Int32.TryParse(DrawersInput.Text, out value) && 0 <= value && value <= 7)
+            {
+                //DrawersInput.Focus();
+                DrawersInput.ForeColor = Color.Green;
+            }
+            else
+            {
+                DrawersInput.ForeColor = Color.Red;
+            }
+        }
+
+        /*************************************************************
+         * MATERIAL VALIDATING
+         * NOT COMPLETED
+         ************************************************************/
+        //private void material_Validating(Object sender, CancelEventArgs e)
+        //{
+        //    HashSet<string> materials = new HashSet<string>()
+        //    {
+        //        "Oak",
+        //        "Laminate",
+        //        "Pine",
+        //        "Rosewood",
+        //        "Venner"
+        //    };
+        //    string material = material.Text;
+        //    if (string.IsNullOrEmpty(material.Text) || !materials.Contains(material) )
+        //    {
+        //        //CustomerInputBox.Focus();
+        //        e.Cancel = true;
+        //        CustomerInputBox.ForeColor = Color.Red;
+        //    }
+        //    else
+        //    {
+        //        CustomerInputBox.ForeColor = Color.Green;
+        //    }
+        //}
     }
 }
