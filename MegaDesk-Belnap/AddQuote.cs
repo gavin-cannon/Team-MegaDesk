@@ -64,12 +64,13 @@ namespace MegaDesk_Belnap
         {
             if (string.IsNullOrEmpty(CustomerInputBox.Text))
             {
-                //CustomerInputBox.Focus();
+                CustomerInputBox.Focus();
                 e.Cancel = true;
                 CustomerInputBox.ForeColor = Color.Red;
             }
             else
             {
+           
                 CustomerInputBox.ForeColor = Color.Green;
             }
         }
@@ -83,11 +84,12 @@ namespace MegaDesk_Belnap
             int value;
             if (Int32.TryParse(DeskWidthInputBox.Text, out value) && 24 <= value && value <= 96 )
             {
-                //DeskWidthInputBox.Focus();
+                
                 DeskWidthInputBox.ForeColor = Color.Green;
             }
             else
             {
+                DeskWidthInputBox.Focus();
                 DeskWidthInputBox.ForeColor= Color.Red;
             }
         }
@@ -102,11 +104,11 @@ namespace MegaDesk_Belnap
             int value;
             if (Int32.TryParse(DeskDepthInputBox.Text, out value) && 12 <= value && value <= 48 )
             {
-                //DeskDepthInputBox.Focus();
                 DeskDepthInputBox.ForeColor = Color.Green;
             }
             else
             {
+                DeskDepthInputBox.Focus();
                 DeskDepthInputBox.ForeColor = Color.Red;
             }
         }
@@ -120,40 +122,54 @@ namespace MegaDesk_Belnap
             int value;
             if (Int32.TryParse(DrawersInput.Text, out value) && 0 <= value && value <= 7)
             {
-                //DrawersInput.Focus();
                 DrawersInput.ForeColor = Color.Green;
             }
             else
             {
+                DrawersInput.Focus();
                 DrawersInput.ForeColor = Color.Red;
             }
         }
 
         /*************************************************************
          * MATERIAL VALIDATING
-         * NOT COMPLETED
+         * If the material is not selected, change color to red
          ************************************************************/
-        //private void material_Validating(Object sender, CancelEventArgs e)
-        //{
-        //    HashSet<string> materials = new HashSet<string>()
-        //    {
-        //        "Oak",
-        //        "Laminate",
-        //        "Pine",
-        //        "Rosewood",
-        //        "Venner"
-        //    };
-        //    string material = material.Text;
-        //    if (string.IsNullOrEmpty(material.Text) || !materials.Contains(material) )
-        //    {
-        //        //CustomerInputBox.Focus();
-        //        e.Cancel = true;
-        //        CustomerInputBox.ForeColor = Color.Red;
-        //    }
-        //    else
-        //    {
-        //        CustomerInputBox.ForeColor = Color.Green;
-        //    }
-        //}
+        private void material_Validating(Object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(material.Text))
+            {
+                material.Focus();
+                e.Cancel = true;
+                material.BackColor = Color.Red;
+            }
+            else
+            {
+                material.ForeColor = Color.Green;
+            }
+        }
+
+
+        /*************************************************************
+         * RUSH VALIDATING
+         * if rush days is not selected, change color to red
+        ************************************************************/
+        private void rushDays_Validating(Object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(rushDays.Text))
+            {
+                rushDays.Focus();
+                e.Cancel = true;
+                rushDays.BackColor = Color.Red;
+            }
+            else
+            {
+                rushDays.ForeColor = Color.Green;
+            }
+        }
+
+
+
+
     }
 }

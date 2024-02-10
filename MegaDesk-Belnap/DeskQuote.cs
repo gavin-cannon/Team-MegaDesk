@@ -12,11 +12,9 @@ namespace MegaDesk_Belnap
         private string customer;
         private DateTime date;
         private int quotePrice;
-<<<<<<< HEAD
         private int[,] rushOrderPrices = new int[3,3];
-=======
         public string display;
->>>>>>> marilee
+
 
         public Desk Desk
         {
