@@ -17,7 +17,7 @@ namespace MegaDesk_Belnap
         {
             deskQuotes = quotes;
             InitializeComponent();
-            
+            dataGridView1.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.DisplayedCells);
             dataGridView1.DataSource = deskQuotes;
         }
 
