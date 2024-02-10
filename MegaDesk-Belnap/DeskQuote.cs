@@ -38,6 +38,12 @@ namespace MegaDesk_Belnap
             set { date = value; }
         }
 
+        public int QuotePrice
+        {
+            get { return quotePrice; }
+            set { quotePrice = value; }
+        }
+
         public int getWidth()
         {
             return desk.Width;
@@ -76,7 +82,36 @@ namespace MegaDesk_Belnap
             quotePrice = 200;
         }
 
-        public void calculateQuote()
+        public struct CombinedDeskQuote
+        {
+            public int DeskWidth { get; set; }
+            public int DeskDepth { get; set; }
+            public int DeskNumberDrawers { get; set; }
+            public DesktopMaterial DeskMaterial { get; set; }
+
+            public int QuoteRushDays { get; set; }
+            public string QuoteCustomer { get; set; }
+            public DateTime QuoteDate { get; set; }
+            public int QuotePrice { get; set; }
+        }
+
+        public CombinedDeskQuote ToCombinedDeskQuote()
+        {
+            return new CombinedDeskQuote
+            {
+                DeskWidth = desk.Width,
+                DeskDepth = desk.Depth,
+                DeskNumberDrawers = desk.NumberDrawers,
+                DeskMaterial = desk.Material,
+                QuoteRushDays = rushDays,
+                QuoteCustomer = customer,
+                QuoteDate = date,
+                QuotePrice = quotePrice
+            };
+        }
+    
+
+    public void calculateQuote()
         {
             int surfaceArea = desk.Width * desk.Depth;
 
@@ -109,6 +144,17 @@ namespace MegaDesk_Belnap
                 default:
                     return 0;
             }
+        }
+
+        public string FormattedDate
+        {
+            get { return date.ToString("MM/dd/yyyy"); }
+        }
+
+
+        public string FormattedQuotePrice
+        {
+            get { return quotePrice.ToString("C"); }
         }
 
         private int getRushCost(int a)
@@ -159,4 +205,5 @@ namespace MegaDesk_Belnap
             }
         }
     }
+
 }
